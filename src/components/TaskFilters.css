@@ -1,0 +1,47 @@
+.task-filters {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-button {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .filter-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .filter-button:active {
+    background-color: #003d80;
+  }
+  
+  @media (max-width: 768px) {
+    .task-filters {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .filter-button {
+      margin-bottom: 10px;
+      width: 90%;
+    }
+  
+    .filter-button:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
